@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layout/main_layout">
+<head>
+<meta charset="UTF-8">
+<title>Category</title>
+</head>
+<body>
+	<div layout:fragment="content">
+<!--		&lt;!&ndash; Page Heading &ndash;&gt;-->
+<!--		<h1 class="h3 mb-2 text-gray-800">Category</h1>-->
+<!--		<p class="mb-4">-->
+<!--			This is category description</a>.-->
+<!--		</p>-->
+
+		<!-- DataTales Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">资产</h6>
+			</div>
+			<div class="card-body">
+					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"  >
+						<thead>
+							<tr>
+								<th>名称</th>
+								<th>类型</th>
+								<th>区域</th>
+								<th>条码</th>
+								<th>EPC</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="prod:${prods}">
+								<td th:text="${prod.name}"></td>
+								<td th:text="${prod.type}"></td>
+								<td th:text="${prod.area}"></td>
+								<td th:text="${prod.barcode}"></td>
+								<td th:text="${prod.code}"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

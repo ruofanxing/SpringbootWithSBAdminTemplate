@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">IT	Genius engineering</title>
+</head>
+<body id="page-top">
+	<!-- Page Wrapper -->
+	<div id="wrapper">
+
+		<!--  Sidebar -->
+		<div th:replace="fragments/sidebar :: sidebar"></div>
+
+		<!-- Content Wrapper -->
+		<div id="content-wrapper" class="d-flex flex-column">
+
+			<!-- Main Content -->
+			<div id="content">
+				<div th:replace="fragments/topmenu :: topmenu"></div>
+				<!-- Begin Page Content -->
+				<div class="container-fluid"  layout:fragment="content"></div>
+			</div>
+			<!-- footer_content -->
+			<div th:replace="fragments/footer_content :: footer_content"></div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
