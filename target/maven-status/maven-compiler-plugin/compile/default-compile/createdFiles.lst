@@ -1,8 +1,11 @@
+com\itgenius\repository\InvOrderDao.class
 com\itgenius\repository\InvDetailDao.class
+com\itgenius\beans\InvDetailExport.class
 com\itgenius\repository\ProductDao.class
 com\itgenius\Application.class
 com\itgenius\controller\HomeController.class
 com\itgenius\beans\Product.class
+com\itgenius\beans\InvOrder.class
 com\itgenius\controller\ProdController.class
 com\itgenius\controller\InvController.class
 com\itgenius\beans\InvDetail.class
